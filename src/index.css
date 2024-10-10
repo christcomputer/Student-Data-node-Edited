@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Header style */
+.header {
+  background: rgb(253,253,253);
+  background: linear-gradient(0deg, rgba(253,253,253,1) 2%, rgba(232,14,14,1) 100%);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Style the form container */
+form {
+  /* background: linear-gradient(0deg, rgba(253,253,253,1) 2%, rgba(232,14,14,1) 100%); Same gradient as header */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto; /* Center the form horizontally */
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="email"] {
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  background-color: rgba(232,14,14,1);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #e2421a;
+}
