@@ -11,7 +11,7 @@ export default function Header() {
                     </Link>
                 </li> */}
                 <li>
-                    <Link to="/">
+                    <Link to="/Student-Data-node-Edited/">
                         <button>Register</button>
                     </Link>
                 </li>

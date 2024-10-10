@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Routes>
         {/* <Route path="/" element={<GoogleSheetData />} /> */}
-        <Route path="/" element={<Form />} />
+        <Route path="/Student-Data-node-Edited/" element={<Form />} />
       </Routes>
     </Router>
   )
