@@ -9,6 +9,8 @@
   background: linear-gradient(0deg, rgba(253,253,253,1) 2%, rgba(232,14,14,1) 100%);
   padding: 20px;
   border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header ul{
@@ -49,6 +51,15 @@ input[type="email"] {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 
 /* Style the submit button */
 button[type="submit"] {

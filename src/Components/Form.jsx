@@ -5,11 +5,11 @@ const Form = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    course:'',
-    fee:'',
-    paid:'',
-    mobile:'',
-    installment:'',
+    course: '',
+    fee: '',
+    paid: '',
+    mobile: '',
+    installment: '',
   });
 
   const handleChange = (e) => {
@@ -27,28 +27,28 @@ const Form = () => {
       method: 'POST',
       body: formDataToSend,
     })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Success:', data);
-      // Clear the form fields
-      setFormData({
-        name: '',
-        email: '',
-        course:'',
-        fee:'',
-        paid:'',
-        mobile:'',
-        installment:"",
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data);
+        // Clear the form fields
+        setFormData({
+          name: '',
+          email: '',
+          course: '',
+          fee: '',
+          paid: '',
+          mobile: '',
+          installment: "",
+        });
+      })
+      .catch((error) => {
+        console.error('Error:', error);
       });
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    });
   };
 
   return (
     <form ref={formRef} onSubmit={handleSubmit}>
-        <h1>Student Registration</h1>
+      <h1>Student Registration</h1>
       <input
         type="text"
         name="name"
@@ -97,15 +97,23 @@ const Form = () => {
         onChange={handleChange}
         required
       />
-      <input
-        type="text"
+      <select
         name="installment"
-        placeholder="Installment / fully paid"
         value={formData.installment}
         onChange={handleChange}
         required
-      />
-      
+      >
+        <option value="" disabled>Select Installment No.</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        {/* <!-- Add more options as needed --> */}
+      </select>
+
+
       <button type="submit">Submit</button>
     </form>
   );
