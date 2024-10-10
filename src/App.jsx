@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Routes>
         {/* <Route path="/" element={<GoogleSheetData />} /> */}
-        <Route path="/register" element={<Form />} />
+        <Route path="/" element={<Form />} />
       </Routes>
     </Router>
   )

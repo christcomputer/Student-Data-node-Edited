@@ -11,6 +11,24 @@
   border-radius: 10px;
 }
 
+.header ul{
+  display: flex;
+  gap: 24px;
+  padding: 10px;
+}
+
+.header ul li{
+  list-style-type: none;
+}
+
+.header ul li button{
+  background: none;
+  border: none;
+  font-size: medium;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 /* Style the form container */
 form {
   /* background: linear-gradient(0deg, rgba(253,253,253,1) 2%, rgba(232,14,14,1) 100%); Same gradient as header */
