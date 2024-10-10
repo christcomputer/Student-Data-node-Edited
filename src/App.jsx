@@ -1,14 +1,20 @@
 import Form from "./Components/Form"
+// import GoogleSheetData from "./Components/GetData"
 import Header from "./Components/Header"
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-// add work
+
+
 function App() {
 
   return (
-    <div>
+    <Router>
       <Header />
-      <Form />
-    </div>
+      <Routes>
+        {/* <Route path="/" element={<GoogleSheetData />} /> */}
+        <Route path="/register" element={<Form />} />
+      </Routes>
+    </Router>
   )
 }
 
