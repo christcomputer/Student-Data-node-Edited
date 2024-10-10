@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base:"/Student-Data-node/",
   plugins: [react()],
+  base:"/Student-Data-node-Edited/",
   server:{
     host:true
   }
