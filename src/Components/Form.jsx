@@ -23,7 +23,7 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const formDataToSend = new FormData(formRef.current);
-    fetch('https://script.google.com/macros/s/AKfycbyztcaIfDJH7b3hclEO2TqiOWiIhMaLcIRVeQYDuVQPB67zbKvJSsypx4zXF1aWCdJI/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbxTquWhZQ2XNIJCzhBxckYXl2aBV_1RTjcMZQbj2AXGbj5ZdlTVZOq43aqCgobArl81/exec', {
       method: 'POST',
       body: formDataToSend,
     })
